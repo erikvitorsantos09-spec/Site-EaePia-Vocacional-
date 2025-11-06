@@ -1,0 +1,46 @@
+.imagem1{
+    margin-left: 30px;
+    display: inline-block;
+}
+.texto1{
+margin-left: 500px;
+margin-right: 30px;
+margin-top: -38%;
+text-align: justify;
+}
+.outra-metade{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -1.5%;
+}
+.imagem2{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 5%;
+}
+.texto2{
+    text-align: justify;
+    margin-right: 600px;
+    margin-left: 30px;
+    margin-top:-23%;
+}
+.segunda-parte{
+    text-align: justify;
+    margin-left: 600px;
+    margin-right: 30px;
+    margin-top: -26%;
+}
+.imagem3{
+    text-align: left;
+    margin-left: 30px;
+}
+.video-institucional{
+    text-align: center;
+}
+.titulo-video{
+    text-align: center;
+    font-size: 200%;
+    padding: 20px;
+    font-weight: bold;
+}

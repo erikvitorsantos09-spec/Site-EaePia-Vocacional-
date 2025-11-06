@@ -1,0 +1,449 @@
+.cabecalho{
+   background-color: #04234B;
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+body{
+    background-color: white
+}
+.botao_do_cabeçalho{
+    display: flex;
+    align-items: center;
+}
+.imagem_cabeçalho{
+    padding: 1em;
+}
+.lista_menu {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    margin-left: -100vw;
+}
+
+.botao_cabecalho_1,
+.lista_menu {
+    transition: 0.5s ease;
+    background-color: #04234B;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    cursor: default;
+    padding-left: 15px;
+    margin-left: 0;
+    top: 100%;
+}
+.logo_1{
+    display: none;
+}
+.botao_cabecalho_1.ligado ~ .lista_menu {
+    transition: 0.5s ease;
+    max-height: 500px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 55vw;
+    background-color: #04234B;
+}
+
+.lista_menu_itens {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    padding: 2em;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.lista_cabecalho{
+    display: none;
+}
+
+.botao_cabecalho_1.ligado ~ .lista_menu .lista_menu_itens {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu_link{
+    color: white;
+    text-decoration: none;
+}
+.grid{
+    
+    font-family: 'Alumni Sans', sans-serif;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    max-height: 99vh;
+    display: grid;
+}
+
+.alunos{
+    display: none;
+}
+.bannerprincipal{
+    grid-row: 1;
+    grid-column: 1/9;
+    text-align: center;
+}
+.bannerprincipal img{
+    width: 100%;
+}
+.lista_cabecalho{
+    display: none;
+}
+.lateral_esquerda{
+    grid-row: 2;
+    grid-column: 1/2;
+    width: 200%;
+}
+.lateral_direita{
+    grid-row: 2;
+    grid-column: 7/8;
+    width: 200%;
+}
+.titulo_noticias{
+    grid-column: 2/8;
+    grid-row: 2;
+    font-size: 18vw;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    justify-items: center;
+    padding: 0.2em;
+}
+.imagem_cabeçalho:checked ~ .botao_cabecalho_1{
+    display: flex;
+}
+.noticia_1{
+    grid-row: 3;
+    grid-column: 1/9;
+    padding: 1em;
+    font-size: 4vw ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #04234B;
+}
+.noticia_2{
+    grid-row: 4;
+    grid-column: 1/9;
+    padding: 1em;
+    font-size: 4vw ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #04234B;
+}
+.noticia_3{
+    grid-row: 5;
+    grid-column: 1/9;
+    padding: 1em;
+    font-size: 4vw ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #04234B;
+}
+.cor_botao{
+    background-color: #04234B;
+    border-radius: 40px;
+    color:#ffffff;
+
+}
+.botao_mais_noticias{
+    grid-row: 6;
+    grid-column: 1/9;
+    text-align: center;
+    align-items: center;
+    padding: 0.5em;
+    color:#ffffff;
+
+    
+}
+.link_botao_noticias{
+     text-decoration: none;
+    font-family: 'Poppins', sans-serif;   
+    color: white;
+}
+.finalizacao_site{
+    grid-row: 10;
+    grid-column: 2/9;
+    padding: 1em;
+    font-size: 4vw ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #04234B;
+    font-size: 4vw;
+}
+.link_finalizacao{
+    text-decoration: none;
+    color: white;
+}
+.imagem_noticia_1{
+display: none;
+}
+.link_noticia_1pc{
+display: none;
+ 
+}
+.imagem_noticia_2{
+    display: none;
+}
+.link_noticia_2pc{
+display: none; 
+}
+.imagem_noticia_3{
+    display: none;
+}
+.link_noticia_3pc{
+    display: none;
+}.finalizacao_site_pc{
+    display: none;
+}
+.escritas_finalizacao_pc{
+    display: none;
+}
+.link_finalizacao_pc{
+    display: none;
+}
+.lista_cabecalho{
+display: none;
+}
+@media screen and (min-width: 768px) {
+    .botao_cabecalho_1{
+        display: none;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .logo_1{
+        display: ruby;
+    }
+    .lista_cabecalho{
+        display: ruby;
+    }
+    .lista_cabecalho{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    .link_lista{
+        text-decoration: none;
+        letter-spacing: 3px;
+        margin-left: 32px;
+        list-style: none;
+        color:rgb(255, 255, 255);
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    }
+    .logo{  
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    }
+    .cabecalho{
+        background-color: #04234B;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 12vh;
+        position: relative;
+    }
+   .banner_principal{
+    grid-row: 7;
+    grid-column: 2/6;
+    text-align: center;
+   }
+
+   .bannerprincipal{
+    display: ruby;
+    grid-column: 1/9;
+    grid-row: 1;
+    align-items: center;
+    text-align: center;
+}
+.alunos{
+    display: ruby;
+    grid-column: 1/9;
+    grid-row: 2;
+    margin-top: -5%;
+    text-align: center;
+    align-items: center;
+}
+.noticia{
+    text-align: center;
+    align-items: center;
+}
+.noticia_1{
+    display: none;
+}
+.noticia_2{
+    display: none;
+}
+.noticia_3{
+    display: none;
+}
+.imagem_noticia_1{
+    grid-column: 1/5;
+    grid-row: 4;
+    padding: 3em;
+    display: ruby;
+    text-align: center;
+
+}
+.link_noticia_1pc{
+    padding: 1em;
+    grid-column: 5/9;
+    grid-row: 4;
+    margin-top: 15%;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    color: #04234B;
+    font-family: 'Poppins', sans-serif;  
+    display: ruby;
+    font-weight: 700;
+
+}
+.imagem_noticia_2{
+    grid-column: 1/5;
+    grid-row: 5;
+    padding: 3em;
+    display: ruby;
+    text-align: center;
+}
+.link_noticia_2pc{
+    padding: 1em;
+    grid-column: 5/9;
+    grid-row: 5;
+    margin-top: 15%;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    color: #04234B;
+    font-family: 'Poppins', sans-serif;   
+    display: ruby;
+    font-weight: 700;
+
+}
+.imagem_noticia_3{
+    grid-column: 1/5;
+    grid-row: 6;
+    padding: 3em;
+    display: ruby;
+    text-align: center;
+
+}
+.link_noticia_3pc{
+    display: ruby;
+    padding: 1em;
+    grid-column: 5/9;
+    grid-row: 6;
+    margin-top: 10%;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    color: #04234B;
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 700;      
+}
+.botao_mais_noticias{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;   
+    color:#04234B;
+    grid-column: 1/9;
+    grid-row: 9;
+    align-items: center;
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .cor_botao{
+     width: 300px;
+     color: grey;        
+ }
+ .link_botao_noticias{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;   
+    color:white; 
+    align-items: center;
+    text-align: center; 
+    font-size: 1.5vw;
+    
+ }
+ .finalizacao_site_pc{
+    display: ruby;
+    grid-row: 10;
+    grid-column: 1/5;
+    text-align: center;
+    padding: 1em;
+    background-color: #04234B;
+}
+.escritas_finalizacao_pc{
+    display: ruby;
+    grid-row: 10;
+    grid-column: 4/9;
+    font-size: 1.5vw ;
+    color: white;
+    background-color: #04234B;
+    padding: 5em;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.link_finalizacao_pc{
+    display: ruby;
+    text-decoration: none;
+    color: white;  
+    padding: 10px;
+    display: flex;
+}
+.finalizacao_site{
+display: none;
+}
+.link_finalizacao{
+    display: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+nav li a:hover{
+    background-color: #04234B;;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    box-shadow: 0 0 2px black;
+    display: none;
+    background-color: #04234B;
+}
+.dropdown-menu:hover{
+    background-color: #04234B;
+    
+}
+.dropdown-menu a{
+    display: block;
+    color: white;
+
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+}

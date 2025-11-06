@@ -1,0 +1,43 @@
+body{
+    padding: 0px;
+}
+.titulo-inicial{
+    text-align: center;
+    font-size: 200%;
+}
+.versiculo{
+    text-align: center;
+    font-style: italic;
+}
+.imagem-filosofia{
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 30px; 
+display: inline-block;
+}
+.texto1{
+    margin-left: 600px;
+    margin-right: 30px;
+    margin-top: -23%;
+    text-align: justify;
+}
+.titulo2{
+    font-size: 110%;
+    font-weight: bold;
+}
+.texto2{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+.imagem2{
+    text-align: right;
+    margin-right: 30px;
+    display: inline-block;
+}
+.texto3{
+    margin-right: 600px;
+    margin-left: 30px;
+    text-align: justify;
+    margin-top: -25%;
+}
